@@ -24,7 +24,7 @@ describe "Static pages" do
             click_link 'Help'
             expect(page).to have_title(full_title('Help'))
             click_link 'Sign in'
-            expect(page).to have_title(full_title('Sign up'))
+            expect(page).to have_title(full_title('Sign in'))
         end
         within ('footer nav') do
             click_link 'About'
